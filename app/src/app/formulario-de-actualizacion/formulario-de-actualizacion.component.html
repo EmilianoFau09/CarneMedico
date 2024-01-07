@@ -1,0 +1,74 @@
+<div class="actualizacion">
+    <h1>Datos funcionarios</h1>
+  
+    <div class="form">
+  
+      <div class="dato">
+        <div class="descripcion">
+          <label for="ci">CI: </label>
+        </div>
+        <input class="textImput" type="text" placeholder="CI" [(ngModel)]="ci">
+      </div>
+  
+      <div class="dato">
+        <div class="descripcion">
+          <label for="nombre">Nombre: </label>
+        </div>
+        <input class="textImput" id="nombre" type="text" placeholder="Nombre" [(ngModel)]="nombre">
+      </div>
+  
+      <div class="dato">
+        <div class="descripcion">
+          <label for="apellido">Apellido: </label>
+        </div>
+        <input class="textImput" id="apellido" type="text" placeholder="Apellido" [(ngModel)]="apellido">
+      </div>
+  
+      <div class="dato">
+        <div class="descripcion">
+          <label for="nacimiento">Nacimiento: </label>
+        </div>
+        <input class="textImput" id="nacimiento" type="date" [(ngModel)]="fechaNacimiento">
+      </div>
+  
+      <h2>Carne de salud</h2>
+      <div class="form-group">
+        <label for="tiene">¿Tiene carnet vigente?</label>
+        <input class="inputCarne" type="checkbox" [(ngModel)]="tieneCarne">
+      </div>   
+
+      <div class="dato" *ngIf="tieneCarne">
+        <div class="descripcion">
+          <label for="fechaEmisionCarneSalud">Fecha emision carne de salud: </label>
+        </div>
+        <input class="textImput" id="fechaEmisionCarneSalud" type="date" [(ngModel)]="fechaEmisionCarne">
+      </div>
+  
+      <div class="dato" *ngIf="tieneCarne">
+        <div class="descripcion">
+          <label for="fechaCarneSalud">Fecha vencimiento carne de salud: </label>
+        </div>
+        <input class="textImput" id="fechaCarneSalud" type="date" [(ngModel)]="fechaVencimientoCarne">
+      </div>
+      
+      <div class="dato datoimg" *ngIf="tieneCarne">
+        <div class="descripcion">
+          <label for="imagen">Comprobante carne de salud: </label>
+        </div>
+        <input class="imagenInput" type="file" id="imagen" name="imagen" accept="image/*" [(ngModel)]="imagenCarne">
+      </div>
+  
+      <div class="dato" *ngIf="!tieneCarne">
+        <div class="descripcion">
+          <label for="agenda">Fecha para agendar: </label>
+          <p>Entre el {{fechaInicioAgenda}} y {{fechaFinAgenda}}</p>
+        </div>
+        <input class="textImput" id="agenda" type="date" [(ngModel)]="fechaAgenda">
+      </div>
+      
+      <div class="btn-registro">
+        <a href="" (click)="actualizarUsuario()">Actualizar</a>
+      </div>
+  
+    </div>
+</div>

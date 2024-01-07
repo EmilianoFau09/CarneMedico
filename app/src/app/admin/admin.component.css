@@ -1,0 +1,155 @@
+.admin {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    flex-direction: column;
+    width: 100%;
+    min-height: 100vh;
+    background-color: black;
+}
+
+.admin h1 {
+    color: white;
+    font-size: 70px;
+}
+
+.admin .form{
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.admin .form .dato{
+    margin-bottom: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 80px;
+}
+
+.admin .form .dato .descripcion{
+    width: 250px;
+    height: 30px;
+ }
+
+.admin .form .dato label{
+    color: white;
+    font-size: 20px;
+}
+
+.admin .form .dato .textImput{
+    padding: 10px 20px;
+    border-radius: 20px;
+    width: 200px;
+    text-align: center;
+    font-size: 15px;
+    transition: all .350s ease;
+}
+.admin .form .dato .textImput:hover {
+    transform: scale(1.1);
+}
+
+
+.admin h2{
+    color: white;
+    font-size: 30px;
+}
+
+.admin .form-group{
+    margin-bottom: 20px;
+}
+
+.admin .form-group label{
+    color: white;
+    font-size: 20px;
+    margin-right: 20px;
+}
+
+.admin .form-group #tiene{
+    padding: 5px;
+    border-radius: 5px;
+}
+
+.admin .imagenInput{
+    padding: 10px 20px;
+    border-radius: 20px;
+    background-color: white;
+    transition: all .350s ease;
+    transform: scale(0.98);
+}
+
+.admin .imagenInput:hover{
+    transform: scale(1.03);
+}
+
+
+.admin .btn-registro{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    margin-top: 30px;
+    margin-bottom: 40px;
+}
+
+.admin a {
+    margin-top: 20px;
+    text-decoration: none;
+    color: white;
+    cursor: pointer;
+    position: relative;
+    padding: 10px 24px;
+    font-size: 18px;
+    color: rgb(193, 163, 98);
+    border: 2px solid rgb(193, 163, 98);
+    border-radius: 34px;
+    background-color: transparent;
+    font-weight: 600;
+    transition: all 0.3s cubic-bezier(0.23, 1, 0.320, 1);
+    overflow: hidden;
+    width: 100px;
+    text-align: center;
+}
+
+.admin a::before {
+    content: '';
+    position: absolute;
+    inset: 0;
+    margin: auto;
+    width: 50px;
+    height: 50px;
+    border-radius: inherit;
+    scale: 0;
+    z-index: -1;
+    background-color: rgb(193, 163, 98);
+    transition: all 0.6s cubic-bezier(0.23, 1, 0.320, 1);
+}
+
+.admin a:hover::before {
+    scale: 3;
+}
+
+.admin a:hover {
+    color: #212121;
+    scale: 1.1;
+    box-shadow: 0 0px 20px rgba(193, 163, 98, 0.4);
+}
+
+.admin a:active {
+    scale: 1;
+}
+
+.admin p {
+    color: white;
+}
+
+.admin .booleans label{
+    color: white;
+    margin-right: 20px;
+    font-size: 20px;
+}
+
+.admin .booleans {
+    margin-bottom: 15px;
+}

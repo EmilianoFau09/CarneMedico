@@ -1,0 +1,64 @@
+<div class="admin">
+    <h1>Cambiar fechas</h1>
+
+    <div class="form">
+        <div class="booleans">
+            <label for="agenda">¿Quiere cambiar agenda?</label>
+            <input id="agenda" class="inputCarne" type="checkbox" [(ngModel)]="cambiarAgenda">
+        </div>
+        <div class="booleans">
+            <label for="actualizacion">¿Quiere cambiar el periodo de actualizacion?</label>
+            <input id="actualizacion" class="inputCarne" type="checkbox" [(ngModel)]="cambiarActualizacion">
+        </div>
+
+
+        <div class="dato">
+            <div class="descripcion">
+                <label for="anoAgenda">Ano de agenda: </label>
+            </div>
+            <input id="anoAgenda" class="textImput" type="text" placeholder="Ano de agenda" [(ngModel)]="anoAgenda">
+        </div>
+
+        <div class="dato">
+            <div class="descripcion">
+                <label for="fechaInicioAgenda">Fecha inicio agenda: </label>
+            </div>
+            <input class="textImput" id="fechaInicioAgenda" type="date" [(ngModel)]="fechaInicioAgenda">
+        </div>
+
+        <div class="dato">
+            <div class="descripcion">
+                <label for="fechaFinAgenda">Fecha fin agenda: </label>
+            </div>
+            <input class="textImput" id="fechaFinAgenda" type="date" [(ngModel)]="fechaFinAgenda">
+        </div>
+
+        <div class="dato">
+            <div class="descripcion">
+                <label for="anoActualizacion">Ano de actualizacion: </label>
+            </div>
+            <input id="anoActualizacion" class="textImput" type="text" placeholder="Ano de actualizacion"
+                [(ngModel)]="anoActualizacion">
+        </div>
+
+        <div class="dato">
+            <div class="descripcion">
+                <label for="fechaInicioActualizacion">Fecha inicio actualizacion: </label>
+            </div>
+            <input class="textImput" id="fechaInicioActualizacion" type="date" [(ngModel)]="fechaInicioActualizacion">
+        </div>
+
+        <div class="dato">
+            <div class="descripcion">
+                <label for="fechaFinActualizacion">Fecha fin actualizacion: </label>
+            </div>
+            <input class="textImput" id="fechaFinActualizacion" type="date" [(ngModel)]="fechaFinActualizacion">
+        </div>
+
+
+        <div class="btn-registro">
+            <a href="" (click)="actualizarDatosAdmin()">Actualizar</a>
+        </div>
+
+    </div>
+</div>
