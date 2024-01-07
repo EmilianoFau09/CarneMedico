@@ -129,6 +129,4 @@ Y a continuación presionar el botón con el texto "ingresar como administrador"
 >- PASS="Contraseña de aplicacion(al verificar en dos pasos, en el gmail de origen)"
 
 # Integrantes
-- Emiliano Fau
-- Ignacio Villareal
-- Joaquín Gasco
+Esta aplicación fue realizada en conjunto con 2 compañeros.
