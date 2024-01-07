@@ -1,3 +1,14 @@
+# Aplicación de Gestión de Carnés de Salud
+Esta aplicación tiene como objetivo simplificar el proceso de entrega y solicitud del carné de salud en una empresa. Los funcionarios deben completar un formulario, proporcionando sus datos y adjuntando un comprobante del carné de salud. Aquellos sin un carné vigente pueden indicarlo y registrarse para una de las fechas disponibles.
+
+## Período de Actualización de Datos
+Los funcionarios deben completar el formulario de actualización de datos entre el 01 y el 15 de noviembre de 2023. Después de esta fecha, si un funcionario desea actualizar sus datos, se le informará que el período ha finalizado. Un usuario administrador tiene la capacidad de modificar la fecha de finalización del período si así se requiere.
+
+## Características a destacar
+- Base de Datos Key-Value: Se implementó este tipo de base de datos para almacenar la información. Consulte más adelante en el README para más detalles.
+- Validación Integral: Se implementó validación de campos en todas las capas de la aplicación (front-end, back-end y base de datos). Esto garantiza que la información ingresada cumpla los parámetros establecidos.
+- Dockerización: La aplicación se dockerizó para facilitar su despliegue y gestión. Se incluye un archivo docker-compose que configura los servicios de la aplicación y la base de datos.
+
 # Introducción
 ### El proyecto cuenta con 4 pantallas
 - La pantalla de inicio de sesión, en la cual los usuarios pueden registrar o iniciar sesión (de tener un usuario), ya sea admin o funcionario.
